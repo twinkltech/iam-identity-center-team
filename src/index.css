@@ -1,3 +1,7 @@
+:root{
+  --twinkl-blue: #2399F9;
+  --twinkl-yellow: #f9b000;
+}
 body {
   background: #f2f3f3;
   background: var(--color-background-layout-main-3yk4Ua, #f2f3f3);
