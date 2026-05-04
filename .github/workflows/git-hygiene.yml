@@ -10,7 +10,7 @@ jobs:
     permissions:
       issues: write
       pull-requests: write
-    runs-on: ubuntu-latest
+    runs-on: warp-ubuntu-2404-arm64-2x
     name: Stale issue job
     steps:
     - uses: actions/stale@v4
