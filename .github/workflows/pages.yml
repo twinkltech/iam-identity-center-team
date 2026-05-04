@@ -27,7 +27,7 @@ concurrency:
 jobs:
   # Build job
   build:
-    runs-on: ubuntu-latest
+    runs-on: warp-ubuntu-2404-arm64-2x
     defaults:
       run:
         working-directory: docs
@@ -68,7 +68,7 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
+    runs-on: warp-ubuntu-2404-arm64-2x
     needs: build
     steps:
       - name: Deploy to GitHub Pages
