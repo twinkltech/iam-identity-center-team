@@ -9,7 +9,7 @@ on:
     - main
 jobs:
   security:
-    runs-on: ubuntu-latest
+    runs-on: warp-ubuntu-2404-arm64-2x
     steps:
       - uses: actions/checkout@master
       - name: Run Snyk to check for vulnerabilities
